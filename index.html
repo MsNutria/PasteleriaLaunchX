@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+    <title>PasteleriaBenji</title>
+    <link rel="icon" href="./icon.jpg">
+</head>
+<body>
+    <header>    
+        <h1>PASTELERIA BENJI, desde 2022</h1> 
+        <h3>Bienvenido a la pastelería mágica de Runaterra</h3>
+        <img src="./logo1.png" alt="LogoPasteleria">
+    </header>
+
+    <h2>Conoce nuestros deliciosos pasteles</h2>
+
+    <h3>Sabores de pasteles</h3>
+    <p>Todos los pasteles son de 8 a 12 porciones</p>
+    <ul>
+        <li>Pastel de Chocolate .......................$20.000</li>
+        <li>Pastel de Vainilla ........................$20.000</li>
+        <li>Pastel de Limón ...........................$20.000</li>
+        <li>Pastel de Fresa............................$20.000</li>
+        <li>Pastel de Café ............................$20.000</li>
+    </ul>
+
+    <h3>Especiales</h3>
+    <dl>
+        <dt><b>Pastel Amapola ............................$40.000</b></dt>
+        <dd>- Suave torta de vainilla con semillas de amapola, rellena de crema danesa, cubierta de chocolate blanco.</dd>
+        <dt><b>Pastel tres leches ........................$40.000</b></dt>
+        <dd>- Torta húmeda remojada con tres tipos de leche: leche evaporada, crema de leche y leche condensada.</dd>
+        <dt><b>Pastel Red Velvet .........................$40.000</b></dt>
+        <dd>- Suave torta roja de frutos rojos rellena de queso crema con dulce de Mora y agraz.</dd>
+        <dt><b>Pastel Milky Way ..........................$40.000</b></dt>
+        <dd>- Suave torta de chocolate rellena de dos capas de arequipe, cubierta de chocolate belga.</dd>
+    </dl>
+
+    <h3>Rellenos para pasteles</h3>
+    <ul>
+        <li>Relleno de Crema pastelera ................$10.000</li>
+        <li>Relleno de Frutos rojos....................$10.000</li>
+        <li>Relleno de Ganache de chocolate............$10.000</li>
+        <li>Relleno de Crema de queso..................$10.000</li>
+        <li>Relleno de Caramelo........................$10.000</li>
+    </ul>
+
+    <h3>Adornos para pasteles</h3>
+    <ul>
+        <li>Chispas de chocolate ......................$5.000</li>
+        <li>Frutos rojos comestibles...................$8.000</li>
+        <li>Banderines decorativos ....................$6.000</li>
+        <li>Barquillos de chocolate....................$5.000</li>
+        <li>Flores comestibles.........................$10.000</li>
+    </ul>
+
+    <hr>
+
+    <h2>Ubicación</h2>
+    <h3>Sucursales</h3>
+    <table>
+        <tr>
+            <th>Nombre</th>  <!-- th- Table header-->  
+            <th>Ubicación</th>
+            <th>Horarios</th>
+            <th>Teléfonos</th>
+        </tr>
+        <tr>
+            <td>Centro</td>  <!-- td- Table data-->  
+            <td><a href="https://g.page/MueblesFiotti?share">Ak 68 #19-5, Bogotá Centro</a></td>
+            <td>L - S 9:00 AM - 7:00 PM</td>
+            <td>315-678-4598</td>
+        </tr>
+        <tr>
+            <td>Sur</td>
+            <td><a href="https://g.page/DULCITAKENNEDY?share">Cra. 78k #35a, Cl. 27 Sur</a></td>
+            <td>L - D 8:00 AM - 7:00 PM</td>
+            <td>324-775-5634</td>
+        </tr>
+        <tr>
+            <td>Norte</td>
+            <td><a href="https://goo.gl/maps/xBxKf9b1dToA2PZp9">Cl. 95 # 13-55, Norte.</a></td>
+            <td>L - S 10:00 AM - 8:00 PM</td>
+            <td>312-881-9532</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- Lables / Etiquetas-->
+    <h2>¡Hagamos tu pedido!</h2>
+    <form action="/accion.js" id="form1" method="post">
+
+        <p>¿De qué sucursal te hacemos la orden?</p>
+        <select name="" id="">
+            <option value="Centro">Centro</option>
+            <option value="Sur">Sur</option>
+            <option value="Norte">Norte</option>
+        </select><br><br>
+
+        <label for="nombre">Nombre:</label> <br><br>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre"><br><br>
+        
+        <label for="telefono">Teléfono:</label> <br><br>
+        <input type="number" id="telefono" name="telefono" placeholder="Tu teléfono"><br><br>
+        
+        <label for="correo">Correo electrónico:</label> <br><br>
+        <input type="email" id="correo" name="correo" placeholder="Tu correo"><br><br>
+        
+        <label for="pastel">¿Qué sabor de pastel deseas?</label> <br><br>
+        <input type="checkbox" id="sabor1" name="sabor1" value="Vainilla">
+        <label for="sabor1">Pastel de Vainilla</label>
+        <input type="number" id="PastelNumber" name="PastelNumber" placeholder="¿Cuántos?"><br>
+        <input type="checkbox" id="sabor2" name="sabor2" value="Chocolate">
+        <label for="sabor2">Pastel de Chocolate</label>
+        <input type="number" id="PastelNumber" name="PastelNumber" placeholder="¿Cuántos?"><br>
+        <input type="checkbox" id="sabor3" name="sabor3" value="Limón">
+        <label for="sabor3">Pastel de Limón</label>
+        <input type="number" id="PastelNumber" name="PastelNumber" placeholder="¿Cuántos?"><br>
+        <input type="checkbox" id="sabor4" name="sabor4" value="Fresa">
+        <label for="sabor3">Pastel de Fresa</label>
+        <input type="number" id="PastelNumber" name="PastelNumber" placeholder="¿Cuántos?"><br>
+        <input type="checkbox" id="sabor5" name="sabor5" value="Café">
+        <label for="sabor3">Pastel de Café</label>
+        <input type="number" id="PastelNumber" name="PastelNumber" placeholder="¿Cuántos?"><br><br>
+        <label for="otro">Especial</label>
+        <input type="text" placeholder="Escribe el nombre del especial">
+        <input type="number" id="PastelNumber" name="PastelNumber" placeholder="¿Cuántos?"><br><br>
+
+        <label for="pastel">¿Qué relleno de pastel deseas? Solamente puedes escoger 1 relleno</label> <br><br>
+        <input type="radio" id="relleno1" name="relleno1" value="Crema pastelera">
+        <label for="sabor1">Relleno de Crema pastelera</label><br>
+        <input type="radio" id="relleno2" name="relleno2" value="Frutos Rojos">
+        <label for="sabor2">Relleno de Frutos Rojos</label><br>
+        <input type="radio" id="relleno3" name="relleno3" value="Ganache de chocolate">
+        <label for="sabor3">Ganache de chocolate</label><br>
+        <input type="radio" id="relleno4" name="relleno4" value="Crema de queso">
+        <label for="sabor3">Relleno de Crema de queso</label><br>
+        <input type="radio" id="relleno5" name="relleno5" value="Caramelo">
+        <label for="sabor3">Relleno de Caramelo</label><br><br>
+
+        <label for="pastel">¿Qué adornos para tu deseas? Puedes combinar máximo dos adornos: </label> <br><br>
+        <input type="checkbox" id="adorno1" name="adorno1" value="chispas">
+        <label for="adorno1">Chispas de Chocolate</label><br>
+        <input type="checkbox" id="adorno2" name="adorno2" value="frutas">
+        <label for="adorno2">Frutos rojos comestibles</label><br>
+        <input type="checkbox" id="adorno3" name="adorno3" value="banderines">
+        <label for="adonorno3">Banderines decorativos</label><br>
+        <input type="checkbox" id="adorno4" name="adorno4" value="barquillos">
+        <label for="adonorno3">Barquillos de chocolate</label><br>
+        <input type="checkbox" id="adorno5" name="adorno5" value="flores">
+        <label for="adorno4">Flores comestibles</label><br><br>
+
+        <label for="Dirección">Dirección:</label>
+        <input type="text" id="dirección" name="Dirección" placeholder="Tu dirección"> <br><br>
+
+        <label for="fecha">Indicanos por favor la fecha en la que deseas recibir</label> <br><br>
+        <input type="date" id="fecha1" name="fecha1"> <br><br>
+
+        <label for="mensaje" form="mensaje">Descripción:</label> <br><br>
+        <textarea name="field" id="mensaje" cols="30" rows="10" placeholder="Anota por favor cualquier arreglo adicional"></textarea>
+
+        <br> <br>
+        <button type="submit">Enviar</button>
+        <input type="reset">
+    </form>
+
+    <h2>Gracias por confiar en nosotros, esperamos vuelvas pronto ❤️</h2>
+
+    <footer>
+        Pasteleria Benji Todos los derechos reservados 2022. <a href="#Top">Ir arriba</a>
+    </footer>
+
+</body>
